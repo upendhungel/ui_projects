@@ -1,0 +1,324 @@
+					Java
+what is Java?
+Java is a programming language and also a platform.
+Platform:Any hardware or software environment in which a program runs.
+Java has its own runtime environment and API,so it is known as platform.
+
+java -version
+javac -version
+
+
+%JAVA_HOME%\bin
+
+Types of Applications we can develop by using java
+we can develop 4 types of applications by using java
+1)Desktop application: It is a application which we need to install on every machine.Eg:Antivirus.
+2)Web Application:An application that runs on serverside and generates dynamic responses is known as desktop application
+Eg:google
+3)Enterprise Applications: An application that is distributed in nature,It has high level security.
+4)Mobile Applications:An application that is created for mobile device.
+JavaME.
+
+James Gosling is Father of java in the year 1995.
+
+JDK,JRE,JVM
+
+javac,java in command prompt?
+
+javac-compiling your code
+java-running the code for output(java A)
+
+
+void print(){
+
+
+}
+
+JVM(Java Virtual Machine):It is an abstract machine that provides run time environment in which java byte code can be 
+executed.
+JVM is platform dependent.
+JVM performs some tasks 
+1)Loads the code(classLoader):it loads the class files
+2)Verifies the code(Bytecode Verifier):checks the code fragments for illegal code that can violate access right to the objects
+3)Executes the code(Interpreter):reads the byte code stream then executes the instructions
+4)Provides runtime environment.
+
+
+JRE(Java Runtime Environment):
+It is used to provide the runtime environment.It is the implementation of JVM.It physically exists.
+It contains some set of libraries + other files that JVM uses at run time.
+
+JDK(Java Development Kit):It contains JRE+development tools(javac,java etc..,)
+
+
+
+write a program to print
+----------
+|  @  @ |
+|      -     |
+-----------
+       |
+    /    \
+       |
+     /   \
+by using command prompt.
+
+Variables and data type,control statements
+
+Variable:
+
+Variable is name of memory location.
+
+
+package:never use capital letters in package names
+
+com.cubic.training
+
+domain name:com or net or org
+company name:cubic
+project name:training
+modulename:firstprogram
+
+
+We have three types of variables available in java.
+1)Instance variable:A variable that is declared inside a class and outside a method is known as instance variable.
+2)Local variable:A variable that is declared inside a method is known as local variable.
+3)static variable:A variable that is declared with static keyword is known as static variable.
+
+DataTypes
+It represents different values to be stored in the variable.Two types of DT
+1)Primitive DT:
+				Object DT(Wrapper classes)
+	int		-		Integer
+	short		-		Short
+	long		-		Long
+	double		-		Double
+	float		-		Float
+	char		-		Character
+	boolean		-		Boolean
+	byte		-		Byte
+2)Non-Primitive DT
+Array,String etc..,
+
+
+Control statements in java?
+Controls the order of execution in java program based on data values and conditional ligic
+1)Selection statements:if,if-else,switch
+
+if:If executes a block of code only if expression is true,but if expression is false then if block is skipped and execution continues
+with rest of the program.
+
+syntax:	if<Conditional expression){
+	//statements
+	}
+
+if-else:It is extension of if. If statements in if fails,statements in else block are executed.
+
+
+switch-case statement:It is also callesd a case statement,it is a mutiway branch with several choices.
+switch is easier to implement than a series of if-else.
+
+It begins with keyword switch, followed by an expression that equates to a no long integer value. 
+
+ctrl+shift+f(to format your code)
+  
+
+2)Loop Statements:while,do-while,for
+
+while:It is looping construct that executes a block of code while a condition is true.
+Loop will never be executed if expression evaluates false.
+while(<condition>){
+//statements
+}
+
+Do-while:similar to while, except the test(evaluation of condition) is performed at end of loop instead of beginning.
+Begins with keyword do,followed by stmts that makeup body of the loop.
+Finally while and test expression completes do-while loop.
+do
+//statements
+while(<condition>)
+
+for:It is looping construct which can exceutes set of instructions a specified number of times
+syntax:
+for(<initialization>;<loop condition>;<increment/decrement expression>){
+//statements
+}
+3)Transfer statements:continue,break
+
+continue:It stops iteration of a loop(while,do,for) and causes execution to resume at top of nearest enclosing loop.
+-Use continue when you don't want to execute the remaining statement in loop,but you don't want to exit loop by itself.
+
+	2)4(2
+	    4
+	-------
+	    0
+
+Break:Transfers control out of enclosing loop(for,while,do-while or switch). use break when you want to jump immediately to
+statement following enclosing control.
+
+OOPS(Object Oriented Programming System) concepts in java.
+Object:It is real world entity that has state and behaviour.
+OOPs is methodology to design a program using classes and objects.It simplifies s/w development and maintenance by
+providing some concepts
+1)Object:Any entity that has state and behaviour.
+Object is instance of a class.
+
+Eg:Chair,pen,car etc..,
+Every objects has three characteristics
+1)state:It represents value(data) of an object
+2)behaviour:It represents behaviour(functionality) of an object such as .
+3)identity:Every object has an identity  implemented by unique ID(JVM)
+
+2)Class: Collection of objects or blueprint of an object
+Class is logical entity.
+A class in java can contain
+i)data members
+ii)methods
+iii)constructors
+iv)blocks
+v)class and interfaces
+
+
+Constructor in java:
+It is a special type of method used to initialize your object.
+It gets invoked at the time of object creation.
+It constructs the values or provides data for the object.
+
+Rules for creating constructor
+1)Constructor name is supposed to be same as your class name.
+2)Constructors never have any return types not even void.
+
+Types of constructors
+1)Default(NO-ARG constructor):A constructor that have no parameters is known as default constructor.
+Its purpose is to provide default values for your object.
+If there is no constructor present in the class,JVM is going to provide a default constructor for your class internally.
+
+2)Parameterized constructor:A constructor that have parameters is known as parameterized constructor.
+It is used to provide different values to distinct objects
+
+
+static keyword in java:
+It is used for memory management.
+we can apply this static keyword with variables,methods,blocks and nested class.
+
+java static variable:
+If you declare any variable as static ,it is known as static variable.
+1)it can be used to refer common property of all objects:
+2)static variable gets memory only once in class area at time of class loading.
+
+static method:
+If you apply static keyword with any method ,it is known as static method.
+1)static method belongs to the class rather than object.
+2)static method can be invoked without the need of creating object.
+3)static method can access static datamembers and can change the  value of it.
+
+static block:
+It is used to initialize static data member.
+It is going to get executed before main method
+
+static{
+}
+
+
+InstanceInitializer block:
+It is used to initialize the instance data member.
+It run each time when object of the class is created.
+
+
+
+3)Inheritance:It is a mechanism in which one object auquires all the properties na d behaviours of parent object.
+It represents IS-A relationship,also known as parent-child relationship.(extends)
+Extends keyword indicates that you are amaking a new class that derives from existing class.
+use:
+1)code reusability
+2)method overriding
+
+HAS-A(Aggregation):
+If a class have an entity reference, it is known as aggregation.
+Student has an entity reference address, relationship between student and address is student has-a address
+ 
+4)Polymorphism:(having many forms)
+when one task is performed in different ways.
+By using 2 concepts
+1)Method Overloading:
+In a class if you have two or more methods with same name but having different no. of parameters or different type of 
+parameters in it is known as method overloading in java. 
+
+2)Method Overriding:If subclass has the same method as declared in the parent class, it isk known as method overriding in 
+java.
+
+rules:
+method must have same name as in the parent class
+method must have same parameters as in the parent class.
+must be is-a relationship present(inheritance)
+
+this:This is reference that refer to current object.
+this with variable:this keyword can be used to refer current class instance variable.
+this() you can invoke current class constructor.
+this keyword is used to invoke current class method.
+
+
+super:Super is reference of immediate parent class object.
+super with variable:super keyword is used to refer immediate parent class instance variable.
+super keyword is used to invoke parent classes method.
+super() is used to invoke parent class default constructor.
+
+5)Abstraction:
+Hiding internal details and showing the functionality.
+Abstract class and Interfaces we can acheive the data abstraction in java.
+
+Abstract Class:
+A class that is declared with abstract keyword.
+It can have both abstract methods as well as concrete methods(non-abstract).
+you can acheive 0 to 100%  abstraction by using abstract classes.
+if you have any abstract method(method with no impementation) in a class then you need to declare that class as 
+abstract class.
+syntax:
+abstract public class A{
+}
+
+
+Interface in java:
+It is a blueprint of a class.
+Interface contains only abstractmethods and static final variables.
+By using interface you can acheive full abstraction(100%).
+With the help of interfaces java supports multiple inheritance.
+you will not be able to create object of interface.
+
+Marker Interface:
+An interface that have no member(variable/method) is known as marker interface.
+They are used to provide some important information to the jvm so that JVM may perform some useful operations.
+EG:Serializable,Cloneable,Remote....
+
+
+Relationship between two interfaces is 
+eg:Interface A extends Interface B
+
+Relationship between class and interface is 
+eg:class Test implements A
+
+Final keyword:Final keyword in java is used to restrict the user.
+This can be used in many contexts
+1)final variable:If you make any variable as final, you cannot change the value of final variable(It becomes constant)
+2)final method:If you make any method as final,you cannot override that method.
+3)final class:If you make any class as final,you cannot inherit that class.
+
+
+6)Encapsulation:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
