@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+
+    <head>
+        <title>Contact List</title>
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>                                                                   
+    <body>
+        
+        <h1 style="color:red;">Contact List</h1>
+        <form name="Contact Information">
+            <table class="table table-hover">
+                <tr>
+                    <th>First Name</th>
+            
+                    <td>
+                        <input type="text" name="firstname" id="firstName" required>
+                    </td>
+                </tr>
+
+            <tr>
+                <th>Last Name</th>
+            
+                
+                <td>
+                    <input type="text" name="lastname" id="lastName" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Phone</th>
+            
+                <td>
+                    <input type="number" name="phone" id="Phone" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <th>Email</th>
+                
+            
+                <td>
+                    <input type="text" name="email" id="Email" required>
+                </td>
+            </tr>
+         
+            <tr>
+       
+                <td rowspan="2">
+                   
+                    <button id="add" class="btn btn-primary btn-lg">Add</button>
+                
+                </td>
+            </tr>
+            </table>
+        </form>
+            
+        <div id="results">
+            <table class="table" id="resultTbl">
+                <caption>Results of the new entries</caption>
+                <thread>
+            
+                <tr>
+            
+                    <th> First Name </th>
+                    <th> Last Name </th>
+                    <th> Phone </th>
+                    <th> Email </th>
+
+                </tr>
+                 
+        </thread>
+            
+         <tbody>
+            <!---We will append new contents in this table-->
+        </tbody> 
+        </table>
+             
+           
+            </div>
+         <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+            <script type="text/javascript" src="/scripts/person.js"></script>
+            <script type="text/javascript" src="/scripts/event.js"></script>
+            <script type="text/javascript" src="/scripts/append.js"></script>
+    </body>
+</html>          
