@@ -1,0 +1,74 @@
+<!doctype Html>
+<head>GetForm
+    <title>Form</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script type="text/javascript" src="/scripts/process.js"></script>
+</head>
+<br>
+<body>
+    <form  id= "forms" name="GetForm" method="GET">
+        <table>
+        <tr>
+            <td>First Name</td>
+            <td><input type =text id='FirstName' name="firstname" value="" placeholder="Enter FirstName "/></td>
+            <td class="Error" id="Errors" style="display:none;"><marquee></marquee ></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type =text id='LastName' name="LastName" value="" placeholder="Enter LastName"/></td>
+            <td class="Error" id="Nepal" style="display:none;"></td>
+            
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type =text id='Address' name="Address" value="" placeholder="Enter Address" /></td>
+            <td class="Error" id="Add1" style="display:none;"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type =password id='Password' name="Password" value="" placeholder="Enter Password"/></td>
+            <td class="Error"  id="Pass1" style="display:none;"></td>
+        </tr>
+    <tr>
+        <td>
+            Gender
+        </td>
+        <td >
+                <input type=radio value="Male" name="Gender" id = "genMale"/>Male<br>
+                <input  type="radio" value="Female" name="Gender"  id="genFemale"/>Female   
+        </td>
+        <td id="Gender" class="Error" style="display:none;"></td>
+    </tr>
+    <tr>
+        <td> Cars</td>
+        <td>
+        <input type="checkbox" value ="Cars" name="Mercedes"/>Mercedes<br>
+        <input type="checkbox" value ="Cars" name="BMW"/>BMW<br>
+        <input type="checkbox" value ="Cars" name="AUDI"/>Audi<br>
+        <input type="checkbox" value ="Cars" name="Porsche"/>Porsche
+        </td>
+    </tr>   
+    <tr>
+        <td>Countries</td>
+        <td>
+        <select name="Countries"  > 
+            <option  value= 1>Nepal</option>
+            <option value =2>USA</option>
+            <option value=3>Mexico</option>
+            <option value=4>India</option>
+            </select>
+        
+        </td>
+            
+            </tr>
+            <tr>
+            <td colspan="2" align=center><input type="submit" value="submit" onClick="processform()"/>
+            
+            </td>             
+            </tr>
+    
+        </table>
+           </form><br>
+    <div id ="Results"> Results will be displayed here</div>
+</body>
